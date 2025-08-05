@@ -9,6 +9,7 @@ import { Badge } from "./components/ui/badge";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import profileImage from "/profile.jpeg";
 import {
   Mail,
   MapPin,
@@ -216,7 +217,7 @@ export default function App() {
             <div className="relative">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
                 <ImageWithFallback
-                  src="/profile.jpeg"
+                  src={profileImage}
                   alt="Lieben Joy Profile"
                   className="w-full h-full object-cover"
                 />
